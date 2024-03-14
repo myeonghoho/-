@@ -25,6 +25,8 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", views.index),
     path("nature/", include("nature.urls")),
+    path("1/", views.index1),
+
 ]
 
 urlpatterns += static(
